@@ -29,7 +29,10 @@
         align-items: center;
       "
     >
-      <div style="font-size: 24px; font-weight: bold; color: #ff6200">
+      <div
+        title="Logo de DarkKitchen"
+        style="font-size: 24px; font-weight: bold; color: #ff6200"
+      >
         DarkKitchen 🍔
       </div>
       <nav>
@@ -37,6 +40,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="../index.html"
+              title="Ir a la página de inicio"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Inicio</a
             >
@@ -44,6 +48,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="nosotros.html"
+              title="Conocer más sobre DarkKitchen"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Nosotros</a
             >
@@ -51,6 +56,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="menu.html"
+              title="Ver el menú de hamburguesas"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Menú</a
             >
@@ -58,6 +64,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="contacto.html"
+              title="Hacer un pedido"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Pedir Ahora</a
             >
@@ -65,6 +72,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="login.html"
+              title="Iniciar sesión en tu cuenta"
               style="
                 color: #ff6200;
                 font-weight: bold;
@@ -91,6 +99,7 @@
       "
     >
       <section
+        title="Formulario de inicio de sesión"
         style="
           background-color: #1e1e1e;
           padding: 40px;
@@ -111,7 +120,7 @@
         >
           Acceso a tu Cuenta
         </h2>
-        <form action="contacto.html" method="GET">
+        <form action="../index.html" method="post">
           <div style="margin-bottom: 20px">
             <label
               for="email"
@@ -128,6 +137,7 @@
               id="email"
               name="email"
               placeholder="ejemplo@correo.com"
+              title="Escribe tu correo electrónico"
               required
               style="
                 width: 100%;
@@ -156,6 +166,7 @@
               id="password"
               name="password"
               placeholder="Tu contraseña secreta"
+              title="Escribe tu contraseña"
               required
               style="
                 width: 100%;
@@ -174,6 +185,7 @@
               type="checkbox"
               id="recordar"
               name="recordar"
+              title="Mantener tu sesión recordada"
               style="
                 margin-right: 8px;
                 accent-color: #ff6200;
@@ -190,6 +202,7 @@
           </div>
           <button
             type="submit"
+            title="Entrar a tu cuenta para realizar pedidos"
             style="
               width: 100%;
               background-color: #ff6200;
@@ -214,7 +227,10 @@
           "
         >
           ¿No tienes cuenta?
-          <a href="#" style="color: #ff6200; text-decoration: none"
+          <a
+            href="#"
+            title="Crear una cuenta nueva"
+            style="color: #ff6200; text-decoration: none"
             >Regístrate</a
           >
         </p>

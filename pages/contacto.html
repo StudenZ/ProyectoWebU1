@@ -25,7 +25,10 @@
         align-items: center;
       "
     >
-      <div style="font-size: 24px; font-weight: bold; color: #ff6200">
+      <div
+        title="Logo de DarkKitchen"
+        style="font-size: 24px; font-weight: bold; color: #ff6200"
+      >
         DarkKitchen 🍔
       </div>
       <nav>
@@ -33,6 +36,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="../index.html"
+              title="Ir a la página de inicio"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Inicio</a
             >
@@ -40,6 +44,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="nosotros.html"
+              title="Conocer más sobre DarkKitchen"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Nosotros</a
             >
@@ -47,6 +52,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="menu.html"
+              title="Ver el menú de hamburguesas"
               style="color: #ffffff; text-decoration: none; font-size: 16px"
               >Menú</a
             >
@@ -54,6 +60,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="contacto.html"
+              title="Completar el formulario de pedido"
               style="
                 color: #ff6200;
                 font-weight: bold;
@@ -66,6 +73,7 @@
           <li style="display: inline; margin-left: 20px">
             <a
               href="login.html"
+              title="Iniciar sesión en tu cuenta"
               style="
                 color: #ffffff;
                 border: 1px solid white;
@@ -83,6 +91,7 @@
 
     <main style="padding: 40px; display: flex; justify-content: center">
       <section
+        title="Formulario para hacer un pedido en DarkKitchen"
         style="
           background-color: #1e1e1e;
           padding: 40px;
@@ -139,6 +148,7 @@
                 id="nombre"
                 name="nombre"
                 placeholder="Juan Pérez"
+                title="Escribe tu nombre completo"
                 required
                 style="
                   width: 100%;
@@ -169,6 +179,7 @@
                 id="telefono"
                 name="telefono"
                 placeholder="555-1234-567"
+                title="Escribe tu número de teléfono"
                 required
                 style="
                   width: 100%;
@@ -225,6 +236,7 @@
                 <select
                   id="platillo"
                   name="platillo"
+                  title="Selecciona la hamburguesa que deseas pedir"
                   required
                   style="
                     width: 100%;
@@ -264,6 +276,7 @@
                   min="1"
                   max="10"
                   value="1"
+                  title="Elige la cantidad de hamburguesas"
                   required
                   style="
                     width: 100%;
@@ -302,6 +315,7 @@
                     type="checkbox"
                     name="extras"
                     value="queso"
+                    title="Agregar extra queso al pedido"
                     style="
                       margin-right: 5px;
                       accent-color: #ff6200;
@@ -323,6 +337,7 @@
                     type="checkbox"
                     name="extras"
                     value="tocino"
+                    title="Agregar tocino ahumado al pedido"
                     style="
                       margin-right: 5px;
                       accent-color: #ff6200;
@@ -344,6 +359,7 @@
                     type="checkbox"
                     name="extras"
                     value="papas"
+                    title="Agregar una porción de papas al pedido"
                     style="
                       margin-right: 5px;
                       accent-color: #ff6200;
@@ -389,6 +405,7 @@
                       name="entrega"
                       value="domicilio"
                       checked
+                      title="Recibir el pedido a domicilio"
                       style="
                         margin-right: 8px;
                         accent-color: #ff6200;
@@ -411,6 +428,7 @@
                       type="radio"
                       name="entrega"
                       value="recoger"
+                      title="Pasar a recoger el pedido"
                       style="
                         margin-right: 8px;
                         accent-color: #ff6200;
@@ -438,6 +456,7 @@
                   type="time"
                   id="hora_entrega"
                   name="hora_entrega"
+                  title="Selecciona una hora de entrega opcional"
                   style="
                     width: 100%;
                     padding: 10px;
@@ -468,6 +487,7 @@
                 name="instrucciones"
                 rows="3"
                 placeholder="Ej: Sin cebolla, extra aderezo..."
+                title="Escribe instrucciones especiales para tu pedido"
                 style="
                   width: 100%;
                   padding: 10px;
@@ -481,10 +501,51 @@
                 "
               ></textarea>
             </div>
+
+            <div></div>
+            <div style="margin-bottom: 10px">
+              <label
+                for="ubicacion"
+                style="
+                  display: block;
+                  margin-bottom: 8px;
+                  font-weight: bold;
+                  color: #ccc;
+                "
+                >Ubicacion:</label
+              >
+              <a
+                id="ubicacion"
+                href="https://maps.app.goo.gl/WB56JtZgSfAVFi3o9"
+                target="_blank"
+                title="Abrir ubicación de DarkKitchen en Google Maps"
+                style="color: white; text-decoration: none"
+                >Encuentranos Aqui</a
+              >
+              <br />
+              <br />
+              <div style="display: flex; justify-content: center">
+                <iframe
+                  src="https://maps.google.com/maps?q=santo%20domingo%20ecuador&z=13&output=embed"
+                  width="100%"
+                  height="350"
+                  title="Mapa de ubicación de DarkKitchen"
+                  style="
+                    max-width: 500px;
+                    border: 1px solid #333;
+                    border-radius: 5px;
+                  "
+                  allowfullscreen
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </fieldset>
 
           <button
             type="submit"
+            title="Confirmar y enviar el pedido"
             style="
               width: 100%;
               background-color: #ff6200;
